@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #424242;
+  font-size: 15px;
+  line-height: 2;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  width: 960px;
+  height: 70px;
+  margin: 0 auto;
+  border-bottom: solid rgb(237,237,237) 1px;
+}
+
+header a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #424242;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #424242;
+}
+
+.logo {
+  float: left;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.global-nav {
+  float: right;
+  margin-top: 20px;
+}
+
+.global-nav li {
+  display: block;
+  float: left;
+  margin: 0 0 0 80px;
+  font-size: 14px;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+wrap {
+  clear: both;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #424242;
+  width: 960px;
+  margin: 0 auto;
+}
+
+footer small {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* slider */
+#css-slider {
+	width: 960px;
+	height: 550px;
+	overflow: hidden;
+    margin: 0 auto;
+}
+ 
+.slide-item {
+	width: 960px;
+	height: 550px;
+	float: left;
+	position: relative;
+}
+ 
+.slider-wrapper {
+	width: 300%;
+	position: relative;
+	left: 0;
+	will-change: transform;
+	animation: slider 20s infinite;
+}
+ 
+@keyframes slider {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-960px); }
+  66% { transform: translateX(-1920px); }
+  100% { transform: translateX(0); }
+}
+
+/* css */
+
+#wrap {
+  clear: both;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.main-center {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family:  'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 18px;
+  font-family:  'Roboto', sans-serif;
+}
+
+.icon:before {
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid #999999;
+}
+
+#about .profile {
+  float: left;
+}
+
+#about .profile-txt {
+  width: 500px;
+  float: left;
+  font-family:   'Roboto', sans-serif; 
+}
+
+#about .hawaii {
+  float: right;
+  margin-top: 55px;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section {
+  width: 500px;
+  margin-bottom: 35px;
+}
+
+#about .career-txt {
+  width: 600px;
+  float: left;
+}
+
+#about .career th {
+  font-family:   'Roboto', sans-serif;
+  font-weight: lighter;
+  border-bottom: 1px dashed rgb(220,220,220) ;
+  color: #424242;
+}
+
+#about .career td {
+  font-family:   'Roboto', sans-serif;
+  font-weight: lighter;
+  border-bottom: 1px dashed rgb(220,220,220) ;
+  padding: 12px 0 12px 40px;
+  color: #424242;
+}
+
+#about .beach {
+  float: right;
+  margin-top: 40px;
+}
+
+.career-txt .fa-linkedin-square {
+  padding: 0 0 0 20px;
+  font-size: 1.2em;
+}
+
+.profile-txt .fa-facebook-square {
+  padding: 0 0 0 20px;
+  font-size: 1.2em;
+}
+
+#about .skill {
+  float: right;
+  width: 315px;
+}
+
+#about .skill-txt {
+  float: left;
+  font-family:   'Roboto', sans-serif; 
+  width: 300px;  
+}
+
+#about .skill-txt ul {
+  list-style: none;
+  padding: 0;
+  margin-top: -5px;
+}
+
+#about .skill-txt ul li {
+  float: left;
+  margin: 5px;
+}
+
+#about .button {
+  box-shadow: 0 0 3px #cccccc;
+  padding: 4px 10px 4px 10px;
+}
+
+#works .light ul {
+  padding: 0;
+}
+
+#works .light li {
+  list-style: none;
+  float: left;
+  margin: 0 30px 30px 0;
+}
+
+#works .light li:nth-child(3n) {
+ 
+}
+
+.contact p {
+  font-family:   'Roboto', sans-serif; 
+  line-height: 2;
+}
+
+input {
+  border-style: none;
+  border: 1px solid #d1d1d1;
+  width: 300px;
+  height: 30px;
+}
+
+textarea {
+  border-style: none;
+  border: 1px solid #d1d1d1;
+  width: 300px;
+}
+
+button {
+  border: none;
+  width: 305px;
+  background-color: #999999;
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 4)
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.name {
+  margin-bottom: 1em;
+}
+
+.mail {
+  margin-bottom: 1em;
+}
+
+.message {
+  margin-bottom: 1em;
+
+}
+
+.button {
+  margin-top: 1.5em;
+}
+
+@media screen and (max-width: 600px){
+  
+  header {
+    width: auto;
+    margin: 0 5%
+  }
+
+  .logo {
+    float: none;
+    margin-top: 5px;
+    text-align: center;
+  }
+    
+  .global-nav {
+    float: none;
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+      
+    }
+  
+  .global-nav li {
+    display: inline;
+    float: none;
+    margin: 0 20px;
+  }
+  
+  #wrap {
+    margin: 0 auto;
+    padding: 35px 0 0;
+  }
+  
+  .content {
+    width: 100%;
+  }
+  
+  .main-center {
+    float: none;
+    width: auto;
+    margin: 0 5%;
+  }
+  
+  h1 {
+    margin-top: 70px;
+    vertical-align: center;
+  }
+  
+  #about .profile {
+  float: none;
+  width: auto;
+}
+  
+  #about .skill {
+  float: none;
+  width: auto;
+}
+  
+  #about .career {
+  float: none;
+  clear: both;
+}
+  
+  #about .career-txt {
+  float: none;
+  padding-top: 20px;
+  width: auto;
+}
+  
+  h2 img {
+    max-width: 100%;
+  }
+
+  .contact {
+    display: inline-block;
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* slider */
+#css-slider {
+	width: 600px;
+	height: 600px;
+	overflow: hidden;
+    margin: 65px auto 0;
+}
+ 
+.slide-item {
+	width: 500px;
+	height: 500px;
+	float: left;
+	position: relative;
+}
+ 
+.slider-wrapper {
+	width: 300%;
+	position: relative;
+	left: 0;
+	will-change: transform;
+	animation: slider 20s infinite;
+}
+ 
+@keyframes slider {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-600px); }
+  66% { transform: translateX(-1200px); }
+  100% { transform: translateX(0); }
+}
+/* slider */
+}
